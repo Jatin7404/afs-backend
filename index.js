@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: "https://afs-frontend-jatins-projects-34f7a407.vercel.app/", // or your frontend URL
+  origin: "https://afs-frontend-jatins-projects-34f7a407.vercel.app", // or your frontend URL
   credentials: true
 }));
 app.use(express.json());
