@@ -4,10 +4,8 @@ import Question from "./models/Question.js";
 
 const seedQuestions = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/interview-prep", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+   await mongoose.connect("");
+
 
     await Question.deleteMany();
     const cleanedData = questionData.map(({ _id, ...rest }) => rest);
